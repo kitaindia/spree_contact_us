@@ -1,0 +1,7 @@
+<table>
+<tr><th><%= t('.subject') %></th><th><%= t('.message') %></th></tr>
+<% @contacts.each do |c| %>
+<tr><td><%= c.subject %></td><td><%= c.message %></td></tr>
+<% end %>
+</table>
+<%= paginate @contacts %>
