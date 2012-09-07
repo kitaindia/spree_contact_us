@@ -1,3 +1,6 @@
 class Spree::Contact < ActiveRecord::Base
-  # attr_accessible :title, :body
+
+  validates :email, :message, :name, :subject, :presence => true
+
+  attr_accessible :email, :message, :name, :subject
 end
